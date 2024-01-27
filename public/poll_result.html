@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="refresh" content="300; URL=https://a-simple-poll.glitch.me/" />
+
+    <title>Results</title>
+    <style>
+        body {
+            background-image: url('img/background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <h1>Poll Results</h1>
+    <h1>Semiotics Discorse: Is it too far?</h1>
+    <h2><a href="https://a-simple-poll.glitch.me/">
+           → → → Start the Poll Again Here ← ← ← </a></h2>
+
+    <hr class="solid">
+
+
+    <section class="project_container row">
+        <div class="column">
+            <div style="width: 25vw; height: 50vh; margin: auto">
+                <canvas id="resultChart1"></canvas>
+            </div>
+        </div>
+        <div class="column">
+            <div style="width: 25vw; height: 50vh; margin: auto">
+                <canvas id="resultChart2"></canvas>
+            </div>
+        </div>
+        <div class="column">
+            <div style="width: 25vw; height: 50vh; margin: auto">
+                <canvas id="resultChart3"></canvas>
+            </div>
+        </div>
+    </section>
+    <hr class="solid">
+    <br></br>
+    <section class="example_container row">
+        <div class="s-explain" class="column" style="margin: auto">
+            <img src="img/1B.png" class="sup-pic" />
+            <p style="margin: 10%"><a
+                    href="https://www.theguardian.com/world/2016/jan/20/japan-to-drop-the-swastika-from-its-tourist-maps"
+                    target="_blank" rel="noopener noreferrer">Japan dropped swastika on maps for western tourists (click
+                    to read more)</a></p>
+            <img src="img/1C.png" class="sup-pic" />
+        </div>
+        <div class="s-explain" class="column" style="margin: auto">
+            <img src="img/2.jpg" class="sup-pic" />
+            <p style="margin: 10%"><a
+                    href="https://www.timesofisrael.com/jojo-rabbit-director-says-critics-wouldnt-be-as-harsh-if-they-knew-hes-jewish/"
+                    target="_blank" rel="noopener noreferrer">"Don’t worry, the director’s Jewish." (click to read
+                    more)</a></p>
+            <img src="img/2A.png" class="sup-pic" />
+        </div>
+        <div class="s-explain" class="column" style="margin: auto">
+            <img src="img/3.jpg" class="sup-pic" />
+            <p style="margin: 10%"><a href="https://www.japanesewithanime.com/2020/06/swastika.html" target="_blank"
+                    rel="noopener noreferrer">卍 character means cool & awesome in Japan pop culture (click to read
+                    more)</a></p>
+            <img src="img/3A.gif" class="sup-pic" />
+        </div>
+    </section>
+    <br></br>
+
+    <hr class="solid">
+    <section class="project_container row">
+        <div class="column">
+            <div style="width: 25vw; height: 50vh; margin: auto">
+                <canvas id="resultChart4"></canvas>
+            </div>
+        </div>
+        <div class="column">
+            <div style="width: 25vw; height: 50vh; margin: auto">
+                <canvas id="resultChart5"></canvas>
+            </div>
+        </div>
+        <div class="column">
+            <div style="width: 25vw; height: 50vh; margin: auto">
+                <canvas id="resultChart6"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <hr class="solid">
+    <br></br>
+    <section class="example_container row">
+        <div class="s-explain" style="margin: auto; padding: 20px">
+            <img src="img/4.jpg" class="sup-pic" />
+            <p style="margin: 10%"><a
+                    href="https://listverse.com/2015/08/01/10-historical-swastikas-unrelated-to-the-nazis/"
+                    target="_blank" rel="noopener noreferrer">Historical Swastikas Around the World (click to read
+                    more)</a></p>
+            <img src="img/4A.png" class="sup-pic" />
+        </div>
+        <div class="s-explain" style="margin: auto">
+            <img src="img/5.jpg" class="sup-pic" />
+            <p style="margin: 10%"><a href="https://en.wikipedia.org/wiki/Red_Swastika_Society" target="_blank"
+                    rel="noopener noreferrer">Red Swastika Society, The Red Cross in Asia (click to learn more)</a></p>
+            <img src="img/5A.png" class="sup-pic" />
+        </div>
+        <div class="s-explain" style="margin: auto">
+            <img src="img/6.jpg" class="sup-pic" />
+            <p style="margin: 10%"><a
+                    href="https://www.sltrib.com/news/2017/08/29/uproar-at-salt-lake-city-market-raises-decades-old-question-will-the-ancient-native-american-swastika-always-be-a-symbol-of-nazi-hate/"
+                    target="_blank" rel="noopener noreferrer">Canceling the Ancient Native American Swastika (click to
+                    read more)</a></p>
+            <img src="img/6A.png" class="sup-pic" />
+        </div>
+    </section>
+    <hr class="solid">
+    <h1>So, what do you think?</h1>
+    <hr class="solid">
+
+    <h1>feel free to click on the topics below to read more</h1>
+    <br></br>
+
+    <div>
+        <p><a href="https://www.sakoguchi.info/comparative-religions-101" target="_blank"
+                rel="noopener noreferrer">“2022 California Biennial Runs Scared of Swastika Artwork.”</a></p>
+        <p><a href="https://www.fox10phoenix.com/news/kanye-was-rite-jewish-cemetery-vandalized-in-suburban-chicago"
+                target="_blank" rel="noopener noreferrer">“ ‘Kanye Was Rite’: Jewish Cemetery Vandalized with Swastikas
+                in Suburban Chicago.”</a></p>
+        <p><a href="https://www.abc.net.au/news/2022-10-26/faith-groups-push-swastika-education-before-nazi-ban/101575932"
+                target="_blank" rel="noopener noreferrer">“Religious Groups Call for Education on Swastikas before Ban
+                on Nazi Symbol Comes into Effect - ABC News.” </a></p>
+        <p><a href="https://www.nbcnews.com/news/asian-america/south-asian-americans-complicated-relationship-swastika-rcna18599"
+                target="_blank" rel="noopener noreferrer">“South Asians Want People to See the Difference between
+                Religious Swastikas and Nazi Symbols.”</a></p>
+        <br></br>
+        <p><a href="https://economictimes.indiatimes.com/blogs/onmyplate/the-swastika-problem-symbol-of-peace-or-hate/"
+                target="_blank" rel="noopener noreferrer">“The Swastika Problem: Symbol of Peace or Hate?” The Economic
+                Times.</a></p>
+        <p><a href="https://www.thespec.com/opinion/contributors/2017/09/07/the-swastika-can-never-be-an-innocent-symbol.html"
+                target="_blank" rel="noopener noreferrer">““Opinion | The Swastika Can Never Be an Innocent Symbol.”</a>
+        </p>
+        <p><a href="https://seattleglobalist.com/2016/05/09/swastika-buddhism-reclaim-tokyo-olympics-seattle-buddhist-temple/47643"
+                target="_blank" rel="noopener noreferrer">“Should Buddhism Reclaim the Swastika?”</a></p>
+        <br></br>
+        <p><a href="https://apnews.com/article/6ed35e0b1d734190be066ef4ffe3c7a9" target="_blank"
+                rel="noopener noreferrer">“Sacred Navajo Symbols on Art Often Confused for Swastikas.”</a></p>
+
+        <p><a href="https://theoutline.com/post/6998/buddhist-temple-swastika-japan-maps-olympics-2020" target="_blank"
+                rel="noopener noreferrer">In Japan, a Debate about Swastikas Takes on New Urgency.” The Outline.</a></p>
+
+        <p><a href="https://qz.com/1757244/can-the-swastika-ever-reclaim-its-original-meaning" target="_blank"
+                rel="noopener noreferrer">“Can the Swastika Ever Reclaim Its Original Meaning?” </a></p>
+
+        <p><a href="https://listverse.com/2015/08/01/10-historical-swastikas-unrelated-to-the-nazis/" target="_blank"
+                rel="noopener noreferrer">77 Years Later Swastika Likely to Be Declared Not Guilty as Calif. Senate
+                Public Safety Committee Clears Bill.</a></p>
+    </div>
+    <br></br>
+
+    <hr class="solid">
+    <h1><a href="https://a-simple-poll.glitch.me/">
+            Start A New the Poll </a></h1>
+    <br></br>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    margin: 0 4%;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+.project_title {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+img {
+    object-fit: contain;
+    width: 70vw;
+    height: 80vh;
+}
+
+p {
+    text-align: center;
+    font: 400 16px sans-serif;
+    color: #98181c;
+}
+
+.project_container,
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    height: auto;
+    float: left;
+    padding: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.left,
+.right {
+    padding: 0 50;
+    width: 10%;
+}
+
+.middle {
+    width: 80%;
+}
+
+hr.solid {
+    border: 3px solid #36a2eb;
+  }
+
+
+h1 {
+    text-align: center;
+    font: bold 60px Sans-Serif;
+    color: rgb(254, 178, 209);
+    text-shadow:
+        0 1px 0px #378ab4,
+        1px 0 0px #5dabcd,
+        1px 2px 1px #378ab4,
+        2px 1px 1px #5dabcd,
+        2px 3px 2px #378ab4,
+        3px 2px 2px #5dabcd,
+        3px 4px 2px #378ab4,
+        4px 3px 3px #5dabcd,
+        4px 5px 3px #378ab4,
+        5px 4px 2px #5dabcd,
+        5px 6px 2px #378ab4,
+        6px 5px 2px #5dabcd,
+        6px 7px 1px #378ab4,
+        7px 6px 1px #5dabcd,
+        7px 8px 0px #378ab4,
+        8px 7px 0px #5dabcd;
+}
+
+h2 {
+  text-align: center;
+  font: bold 34px Sans-Serif;
+  color: rgb(54, 132, 235);
+}
+
+.yes-button {
+    appearance: button;
+    background-color: #98181c;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.yes-button:after {
+    background-clip: padding-box;
+    background-color: #f50a0a;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.yes-button:main,
+.button-19:focus {
+    user-select: auto;
+}
+
+.yes-button:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+.yes-button:disabled {
+    cursor: auto;
+}
+
+.no-button {
+    appearance: button;
+    background-color: #477b0e;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.no-button:after {
+    background-clip: padding-box;
+    background-color: #27eb5f;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.no-button:main,
+.button-19:focus {
+    user-select: auto;
+}
+
+.no-button:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+.no-button:disabled {
+    cursor: auto;
+}
+
+.example_container {
+    display: flex;
+}
+
+.sup-pic {
+    width: 30vw;
+    height: 30vh;
+    display: inline-block;
+}
+
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}

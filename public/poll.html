@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>A Simple Poll</title>
+    <style>
+        body {
+            background-image: url('img/background.jpg');
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="project_heading">
+        <h1  id="Q-title">Do you feel a tenny, tiny bit strange seeing it?</h1>
+    </div>
+
+    <section class="project_container row">
+        <div class="column left">
+            <button class="yes-button" id="yes-b" role="button">Yes</button>
+        </div>
+        <div class="column middle">
+            <img src="img/1B.png" id="pic" alt="Question-Pic"  />
+        </div>
+        <div class="column right">
+            <button class="no-button" id="no-b" role="button">No</button>
+        </div>
+    </section>
+
+    <!-- For Testing -->
+    <p hidden id="yes-counter" class="project__count"> 0 </p>
+    <p hidden id="no-counter" class="project__count"> 0 </p>
+
+    <div hidden class="total-tracker">
+        <div id="total-info"> </div>
+        <div id="total-info2"> </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
